@@ -16,6 +16,5 @@ namespace GestionRuche
         public Hive HiveId { get; set; }
         public Flower FlowerId { get; set; }
 
-
     }
 }

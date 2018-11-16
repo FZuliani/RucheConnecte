@@ -14,6 +14,7 @@ namespace GestionRuche
         public int Latitude { get; set; }
         public int Longitude { get; set; }
         public Hive HiveId { get; set; }
+        public Flower FlowerId { get; set; }
 
 
     }

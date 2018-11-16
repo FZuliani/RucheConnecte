@@ -18,8 +18,7 @@ namespace GestionRuche
         public bool Active { get; set; }
         public bool ActiveBeeK { get; set; }
 
-
-
+        
 
     }
 }

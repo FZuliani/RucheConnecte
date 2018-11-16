@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alert.cs" />
+    <Compile Include="Flower.cs" />
     <Compile Include="Hive.cs" />
     <Compile Include="Image.cs" />
     <Compile Include="Location.cs" />

@@ -14,6 +14,6 @@ namespace GestionRuche
         public int Temperature { get; set; }
         public int Humidity { get; set; }
         public int AirQuality { get; set; }
-        public Hive HiveId { get; set; }
+        public int HiveId { get; set; }
     }
 }

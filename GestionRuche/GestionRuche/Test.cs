@@ -11,8 +11,8 @@ namespace GestionRuche
 
         public int Id { get; set; }
         public bool Result { get; set; }
-        public int UserId { get; set; }
-        public int ImageId { get; set; }
+        public User UserId { get; set; }
+        public Image ImageId { get; set; }
 
     }
 }

@@ -13,7 +13,7 @@ namespace GestionRuche
         public DateTime Date { get; set; }
         public int Latitude { get; set; }
         public int Longitude { get; set; }
-        public int HiveId { get; set; }
+        public Hive HiveId { get; set; }
 
 
     }

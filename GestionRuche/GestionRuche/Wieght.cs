@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace GestionRuche
 {
-    class Weight
+    class Wieght
     {
 
         public int Id { get; set; }
         public DateTime Date { get; set; }
-        public int weight { get; set; }
-        public int HiveId { get; set; }
+        public int wieght { get; set; }
+        public Hive HiveId { get; set; }
 
     }
 }

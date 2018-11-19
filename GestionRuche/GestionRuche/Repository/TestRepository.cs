@@ -14,7 +14,7 @@ namespace GestionRuche.Repository
         private SqlConnection connection = SingletonConnection.Connection();
 
 
-        public bool CreateTest(Test test)
+        public bool InsertTest(Test test)
         {
 
 
@@ -51,7 +51,7 @@ namespace GestionRuche.Repository
         }
 
 
-        public Test Read(int id)
+        public Test SelectTest(int id)
         {
             SqlCommand command = connection.CreateCommand();
             command.CommandText = "SELECT * FROM Test WHERE Id = " + id;

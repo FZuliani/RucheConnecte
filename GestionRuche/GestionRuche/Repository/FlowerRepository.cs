@@ -14,7 +14,7 @@ namespace GestionRuche.Repository
         private SqlConnection connection = SingletonConnection.Connection();
 
         //INSERT
-        public bool CreateFlower(Flower flower)
+        public bool InsertFlower(Flower flower)
         {
             SqlCommand command = connection.CreateCommand();
             command.CommandText = "PR_InsertFlower @FlowerT ";
@@ -40,7 +40,7 @@ namespace GestionRuche.Repository
             }
         }
 
-        public Flower ReadFlower(int id)
+        public Flower SelectFlower(int id)
         {
             SqlCommand command = connection.CreateCommand();
             command.CommandText = "SELECT * FROM FlowerType WHERE Id =" + id;

@@ -13,7 +13,7 @@ namespace GestionRuche.Repository
         private SqlConnection connection = SingletonConnection.Connection();
 
         //Insert
-        public bool CreateHive(Hive hive)
+        public bool InsertHive(Hive hive)
         {
             SqlCommand command = connection.CreateCommand();
             command.CommandText = "Exec PR_InsertHive @Name,@Description,@Initial_Weight,@Active,@User_id";
@@ -49,7 +49,7 @@ namespace GestionRuche.Repository
             }
         }
 
-        public Hive ReadHive(int id)
+        public Hive SelectHive(int id)
         {
             SqlCommand command = connection.CreateCommand();
             command.CommandText = "SELECT * FROM Hive WHERE Id =" + id;
@@ -72,7 +72,7 @@ namespace GestionRuche.Repository
                 Description = (string)row["Description"],
                 InitWeight = (int)row["Initial_Weight"],
                 Active = (bool)row["Active"],
-                UserId = (User)row["User_id"],
+                UserId = (int)row["User_id"],
             };
         }
 
@@ -96,7 +96,7 @@ namespace GestionRuche.Repository
                     Description = (string)row["Description"],
                     InitWeight = (int)row["Initial_Weight"],
                     Active = (bool)row["Active"],
-                    UserId = (User)row["User_id"],
+                    UserId = (int)row["User_id"],
                 });
             }
             return hive;

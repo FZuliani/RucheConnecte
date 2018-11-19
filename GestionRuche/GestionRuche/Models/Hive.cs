@@ -13,6 +13,6 @@ namespace GestionRuche
         public string Description { get; set; }
         public int InitWeight { get; set; }
         public bool Active { get; set; }
-        public User UserId { get; set; }
+        public int UserId { get; set; }
     }
 }

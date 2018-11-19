@@ -15,7 +15,7 @@ namespace GestionRuche
         private SqlConnection connection = SingletonConnection.Connection();
 
 
-        public bool CreateUser(User user)
+        public bool InsertUser(User user)
         {
 
             SqlCommand command = connection.CreateCommand();
@@ -64,7 +64,7 @@ namespace GestionRuche
 
 
         //récupère un Utilisateur en fonction de son ID
-        public User ReadUser(int id)
+        public User SelectUser(int id)
         {
 
             SqlCommand command = connection.CreateCommand();

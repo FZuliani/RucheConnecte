@@ -13,7 +13,7 @@ namespace GestionRuche.Repository
         private SqlConnection connection = SingletonConnection.Connection();
 
         //INSERT 
-        public bool CreateImage(Image image)
+        public bool InsertImage(Image image)
         {
             SqlCommand command = connection.CreateCommand();
             command.CommandText = "PR_InsertImage @Result,@TimeStamp,@ImagePos,@User_id,@Hive_id";
@@ -48,7 +48,7 @@ namespace GestionRuche.Repository
             }
         }
 
-        public Image ReadImage(int id)
+        public Image SelectImage(int id)
         {
             SqlCommand command = connection.CreateCommand();
             command.CommandText = "SELECT * FROM Image Where Id =" + id;
@@ -68,8 +68,8 @@ namespace GestionRuche.Repository
                 Result = (bool)row["Result"],
                 Date = (DateTime)row["TimeStamp"],
                 ImagePos = (string)row["ImagePos"],
-                UserId =(User)row["User_id"],
-                HiveId = (Hive)row["Hive_id"],
+                UserId =(int)row["User_id"],
+                HiveId = (int)row["Hive_id"],
             };
         }
 
@@ -90,8 +90,8 @@ namespace GestionRuche.Repository
                     Result =(bool)row["Result"],
                     Date = (DateTime)row["TimeStamp"],
                     ImagePos = (string)row["ImagePos"],
-                    UserId = (User)row["User_id"],
-                    HiveId = (Hive)row["Hive_id"],
+                    UserId = (int)row["User_id"],
+                    HiveId = (int)row["Hive_id"],
                 });
             }
             return image;

@@ -14,7 +14,7 @@ namespace GestionRuche.Repository
         private SqlConnection connection = SingletonConnection.Connection();
 
 
-        public bool CreateWeight(Weight weight)
+        public bool InsertWeight(Weight weight)
         {
             SqlCommand command = connection.CreateCommand();
             command.CommandText = "PR_InsertWeight @TimeStamp, @Weight, @Hive_id";
@@ -50,7 +50,7 @@ namespace GestionRuche.Repository
 
 
 
-        public Weight ReadWeight(int id)
+        public Weight SelectWeight(int id)
         {
             SqlCommand command = connection.CreateCommand();
             command.CommandText = "SELECT * FROM Weight WHERE Id = " + id;

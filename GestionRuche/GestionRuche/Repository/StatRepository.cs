@@ -14,7 +14,7 @@ namespace GestionRuche.Repository
 
         private SqlConnection connection = SingletonConnection.Connection();
 
-        public bool Create(Statistic stat)
+        public bool InsertStat(Statistic stat)
         {
 
             SqlCommand command = connection.CreateCommand();
@@ -56,7 +56,7 @@ namespace GestionRuche.Repository
 
 
 
-        public Statistic Read(int id)
+        public Statistic SelectStat(int id)
         {
 
             SqlCommand command = connection.CreateCommand();

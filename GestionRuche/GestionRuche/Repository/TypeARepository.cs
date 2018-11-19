@@ -14,7 +14,7 @@ namespace GestionRuche.Repository
         private SqlConnection connection = SingletonConnection.Connection();
 
 
-        public bool CreateTypeA(TypeA typeA)
+        public bool InsertTypeA(TypeA typeA)
         {
             SqlCommand command = connection.CreateCommand();
             command.CommandText = "PR_InsertTypeA @Desctiption";
@@ -44,7 +44,7 @@ namespace GestionRuche.Repository
         }
 
 
-        public TypeA Read(int id)
+        public TypeA SelectTypeA(int id)
         {
             SqlCommand command = connection.CreateCommand();
             command.CommandText = "SELECT * FROM Type_Alert WHERE Id = " + id;

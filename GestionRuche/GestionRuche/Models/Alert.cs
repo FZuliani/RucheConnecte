@@ -12,8 +12,8 @@ namespace GestionRuche
         public int Id { get; set; }
         public DateTime Date { get; set; }
         public bool AlertA { get; set; }
-        public TypeA TypeAId { get; set; }
-        public Hive HiveId { get; set; }
+        public int TypeAId { get; set; }
+        public int HiveId { get; set; }
 
     }
 }

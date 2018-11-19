@@ -14,7 +14,7 @@ namespace GestionRuche.Repository
 
         //Insert
 
-        public bool CreateAlert(Alert alert)
+        public bool InsertAlert(Alert alert)
         {
             SqlCommand command = connection.CreateCommand();
 
@@ -68,7 +68,7 @@ namespace GestionRuche.Repository
                     Date = (DateTime)row["Date"],
                     AlertA = (bool)row["AlertA"],
                     TypeAId = (TypeA)row["TypeAId"],
-                    HiveId =(Hive)row["HiveId"]
+                    HiveId =(int)row["HiveId"]
 
                 });
             }

@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace GestionRuche
 {
-    class Statistic
+    class Alert
     {
 
         public int Id { get; set; }
         public DateTime Date { get; set; }
-        public int Temperature { get; set; }
-        public int Humidity { get; set; }
-        public int AirQuality { get; set; }
-        public Hive HiveId { get; set; }
+        public bool AlertA { get; set; }
+        public int TypeAId { get; set; }
+        public int HiveId { get; set; }
+
     }
 }

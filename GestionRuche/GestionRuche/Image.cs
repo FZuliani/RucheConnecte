@@ -14,8 +14,8 @@ namespace GestionRuche
         public bool Result { get; set; }
         public DateTime Date { get; set; }
         public string ImagePos { get; set; }
-        public User UserId { get; set; }
-        public Hive HiveId { get; set; }
+        public int UserId { get; set; }
+        public int HiveId { get; set; }
 
     }
 }

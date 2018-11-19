@@ -118,6 +118,8 @@ namespace GestionRuche
             SqlCommand command = connection.CreateCommand();
             command.CommandText = "EXEC PR_UpdateUser @Id, @Column, @var_modif";
 
+
+            //création et ajout des parametres à la commande
             SqlParameter parameterID = new SqlParameter("Id", id); 
             SqlParameter parameterColumn = new SqlParameter("Column", Column); 
             SqlParameter parameterValueChange = new SqlParameter("var_modif", ValueChange); 
@@ -149,7 +151,7 @@ namespace GestionRuche
         public bool DeleteUser(int id)
         {
             SqlCommand command = connection.CreateCommand();
-            command.CommandText = "PR_DelUser " + id;
+            command.CommandText = "EXEC PR_DelUser " + id;
             int rows = 0;
             try
             {
@@ -166,6 +168,9 @@ namespace GestionRuche
 
             return rows == 1;
         }
+
+
+
 
     }
 }

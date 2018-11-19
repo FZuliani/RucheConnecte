@@ -11,7 +11,7 @@ namespace GestionRuche
         static void Main(string[] args)
         {
 
-
+            SingletonConnection.Connection();
 
         }
     }

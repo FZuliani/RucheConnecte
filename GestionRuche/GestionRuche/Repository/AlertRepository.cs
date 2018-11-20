@@ -67,7 +67,7 @@ namespace GestionRuche.Repository
                     Id = (int)row["Id"],
                     Date = (DateTime)row["Date"],
                     AlertA = (bool)row["AlertA"],
-                    TypeAId = (TypeA)row["TypeAId"],
+                    TypeAId = (int)row["TypeAId"],
                     HiveId =(int)row["HiveId"]
 
                 });

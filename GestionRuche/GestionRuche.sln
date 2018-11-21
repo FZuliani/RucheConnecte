@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionRuche", "GestionRuche\GestionRuche.csproj", "{DB43B209-37BE-4D1F-8935-EB7B7661DB2C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionRuche.API", "GestionRuche.API\GestionRuche.API.csproj", "{7F5AA9F5-F707-43F0-BC0A-F1B55F91231D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DB43B209-37BE-4D1F-8935-EB7B7661DB2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB43B209-37BE-4D1F-8935-EB7B7661DB2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB43B209-37BE-4D1F-8935-EB7B7661DB2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F5AA9F5-F707-43F0-BC0A-F1B55F91231D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F5AA9F5-F707-43F0-BC0A-F1B55F91231D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F5AA9F5-F707-43F0-BC0A-F1B55F91231D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F5AA9F5-F707-43F0-BC0A-F1B55F91231D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

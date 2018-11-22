@@ -20,7 +20,7 @@ namespace GestionRuche
 
             if (connection == null)
             {
-                connection = new SqlConnection("Data Source=PORTABLE-FRANCO\\TECHNOBELSQL2014");
+                connection = new SqlConnection("Data Source=10.10.10.66\\SQLDB");
 
             }
 

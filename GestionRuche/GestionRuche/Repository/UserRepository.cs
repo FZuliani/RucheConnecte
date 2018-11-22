@@ -5,10 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using GestionRuche.DAL.Models;
 
-namespace GestionRuche
+namespace GestionRuche.DAL.Repository
 {
-    class UserRepository
+    public class UserRepository
     {
 
 

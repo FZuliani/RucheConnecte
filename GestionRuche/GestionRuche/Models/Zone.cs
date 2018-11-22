@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestionRuche.Models
+namespace GestionRuche.DAL.Models
 {
-    class Zone
+    public class Zone
     {
 
         public int id { get; set; }

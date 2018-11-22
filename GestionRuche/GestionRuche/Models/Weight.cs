@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestionRuche
+namespace GestionRuche.DAL.Models
 {
-    class Weight
+    public class Weight
     {
 
         public int Id { get; set; }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestionRuche
+namespace GestionRuche.DAL.Models
 {
-    class Statistic
+    public class Statistic
     {
 
         public int Id { get; set; }

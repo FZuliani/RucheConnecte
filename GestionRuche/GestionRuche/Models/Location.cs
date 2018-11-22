@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestionRuche
+namespace GestionRuche.DAL.Models
 {
     public class Location
     {
@@ -17,7 +17,7 @@ namespace GestionRuche
         public string Nectar_Type { get; set; }
         public int Hive_id { get; set; }
         public int Zone_id { get; set; }
-
-
+        public int Flower_id { get; set; }
+               
     }
 }

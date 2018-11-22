@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestionRuche.Models
+namespace GestionRuche.DAL.Models
 {
-    class Flower
+    public class Flower
     {
         public int Id { get; set; }
         public string FlowerType { get; set; }
-        public int Locatio_id { get; set; }
     }
 }

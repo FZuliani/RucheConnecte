@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionRuche", "GestionRuche\GestionRuche.csproj", "{DB43B209-37BE-4D1F-8935-EB7B7661DB2C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionRuche.DAL", "GestionRuche\GestionRuche.DAL.csproj", "{DB43B209-37BE-4D1F-8935-EB7B7661DB2C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionRuche.API", "GestionRuche.API\GestionRuche.API.csproj", "{7F5AA9F5-F707-43F0-BC0A-F1B55F91231D}"
 EndProject

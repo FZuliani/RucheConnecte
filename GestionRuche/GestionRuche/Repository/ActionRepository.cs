@@ -5,9 +5,9 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using GestionRuche.Models;
+using GestionRuche.DAL.Models;
 
-namespace GestionRuche.Repository
+namespace GestionRuche.DAL.Repository
 {
     public class ActionRepository
     {

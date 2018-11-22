@@ -5,9 +5,10 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
+using GestionRuche.DAL.Models;
 using System.Threading.Tasks;
 
-namespace GestionRuche.Repository
+namespace GestionRuche.DAL.Repository
 {
     public class StatueRepository
     {

@@ -6,10 +6,12 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GestionRuche.DAL.Models;
 
-namespace GestionRuche.Repository
+
+namespace GestionRuche.DAL.Repository
 {
-    class FlowerRepository
+    public class FlowerRepository
     {
         private SqlConnection connection = SingletonConnection.Connection();
 
@@ -17,12 +19,10 @@ namespace GestionRuche.Repository
         public bool InsertFlower(Flower flower)
         {
             SqlCommand command = connection.CreateCommand();
-            command.CommandText = "PR_InsertFlower @FlowerT, @location";
+            command.CommandText = "PR_InsertFlower @FlowerT";
 
             SqlParameter parameterFlowerT = new SqlParameter("FlowerT",flower.FlowerType);
-            SqlParameter parameterLocationID = new SqlParameter("location",flower.Locatio_id);
-
-
+            
             command.Parameters.Add(parameterFlowerT);
 
             try

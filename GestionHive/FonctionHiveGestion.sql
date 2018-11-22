@@ -510,7 +510,7 @@ AS
 BEGIN
 
 	UPDATE Flower
-	SET Flower_Type = @var_modif
+	SET Flower_Name = @var_modif
 	WHERE Id = @Id
 
 END

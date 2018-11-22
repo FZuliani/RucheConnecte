@@ -6,14 +6,17 @@ using System.Threading.Tasks;
 
 namespace GestionRuche
 {
-    class Location
+    public class Location
     {
 
-        public int Id { get; set; }
-        public DateTime Date { get; set; }
+        public int id { get; set; }
+        public DateTime TimeStamp { get; set; }
         public int Latitude { get; set; }
-        public int Longitude { get; set; }
-        public int HiveId { get; set; }
+        public int longitude { get; set; }
+        public string Orientation { get; set; }
+        public string Nectar_Type { get; set; }
+        public int Hive_id { get; set; }
+        public int Zone_id { get; set; }
 
 
     }

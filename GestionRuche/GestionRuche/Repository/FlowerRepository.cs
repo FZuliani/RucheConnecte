@@ -17,9 +17,10 @@ namespace GestionRuche.Repository
         public bool InsertFlower(Flower flower)
         {
             SqlCommand command = connection.CreateCommand();
-            command.CommandText = "PR_InsertFlower @FlowerT ";
+            command.CommandText = "PR_InsertFlower @FlowerT, @location";
 
             SqlParameter parameterFlowerT = new SqlParameter("FlowerT",flower.FlowerType);
+            SqlParameter parameterLocationID = new SqlParameter("location",flower.Locatio_id);
 
 
             command.Parameters.Add(parameterFlowerT);

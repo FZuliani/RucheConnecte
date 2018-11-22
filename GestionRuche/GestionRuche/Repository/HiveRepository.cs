@@ -16,7 +16,7 @@ namespace GestionRuche.Repository
         public bool InsertHive(Hive hive)
         {
             SqlCommand command = connection.CreateCommand();
-            command.CommandText = "Exec PR_InsertHive @Name,@Description,@Initial_Weight,@Active,@User_id";
+            command.CommandText = "Exec PR_InsertHive @Name,@Description,@Initial_Weight,@Active,@User_id, @Zone_id";
 
             //Creation des paramètre de la commande 
 
@@ -25,6 +25,8 @@ namespace GestionRuche.Repository
             SqlParameter parameterInitialWeight = new SqlParameter("Initial_Weight", hive.InitWeight);
             SqlParameter parameterActive = new SqlParameter("Active", hive.Active);
             SqlParameter parameterUserID = new SqlParameter("User_id", hive.UserId);
+            SqlParameter parameterZoneId = new SqlParameter("Zone_id", hive.ZoneId);
+
 
             //Ajout des paramètre ala commande
 
@@ -33,6 +35,7 @@ namespace GestionRuche.Repository
             command.Parameters.Add(parameterInitialWeight);
             command.Parameters.Add(parameterActive);
             command.Parameters.Add(parameterUserID);
+            command.Parameters.Add(parameterZoneId);
 
             try
             {
@@ -97,6 +100,7 @@ namespace GestionRuche.Repository
                     InitWeight = (int)row["Initial_Weight"],
                     Active = (bool)row["Active"],
                     UserId = (int)row["User_id"],
+                    ZoneId = (int)row["Zone_id"],
                 });
             }
             return hive;

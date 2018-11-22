@@ -14,5 +14,6 @@ namespace GestionRuche
         public int InitWeight { get; set; }
         public bool Active { get; set; }
         public int UserId { get; set; }
+        public int ZoneId { get; set; }
     }
 }

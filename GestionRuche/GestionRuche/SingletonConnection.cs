@@ -20,7 +20,8 @@ namespace GestionRuche
 
             if (connection == null)
             {
-                connection = new SqlConnection("Data Source=10.10.10.66\\SQLDB");
+                connection = new SqlConnection("Data Source=PORTABLE-FRANCO\\TECHNOBELSQL2014; Initial Catalog=BeeGestion; Integrated Security=True");
+                //connection = new SqlConnection("Data Source=10.10.10.73; Initial Catalog=BeeGestion; User ID=francois; Password=21Avril95");
 
             }
 

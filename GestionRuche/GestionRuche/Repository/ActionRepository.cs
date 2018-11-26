@@ -82,15 +82,15 @@ namespace GestionRuche.DAL.Repository
         }
 
 
-        public bool UpdateAction(int id, string column, string ValueChange)
+        public bool UpdateAction(int id, string Action)
         {
             SqlCommand command = connection.CreateCommand();
             command.CommandText = "EXEC PR_UpdateAction @id, @column, @ValueChange";
 
             //création et ajout des parametres
             SqlParameter parameterId = new SqlParameter("id", id);
-            SqlParameter parameterColumn = new SqlParameter("column", column);
-            SqlParameter parameterValueChange = new SqlParameter("id", ValueChange);
+            SqlParameter parameterColumn = new SqlParameter("column" ,Action[0]);
+            SqlParameter parameterValueChange = new SqlParameter("ValueChange", Action[1]);
 
             command.Parameters.Add(parameterId);
             command.Parameters.Add(parameterColumn);

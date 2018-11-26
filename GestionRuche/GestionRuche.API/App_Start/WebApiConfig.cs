@@ -19,6 +19,11 @@ namespace GestionRuche.API
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+            //renvoyer du JSON
+            config.Formatters.JsonFormatter.SupportedMediaTypes.Add(
+
+                //recherche "asp web api return json"
+                new System.Net.Http.Headers.MediaTypeHeaderValue("text/html"));
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using GestionRuche.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -85,7 +84,9 @@ namespace GestionRuche.DAL.Repository
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+
             }
+
             return rows == 1;
         }
         //DELETE

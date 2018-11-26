@@ -1,0 +1,7 @@
+C:\Users\François\source\repos\RucheConnecte\GestionRuche\GestionRuche\obj\Debug\GestionRuche.DAL.csprojAssemblyReference.cache
+C:\Users\François\source\repos\RucheConnecte\GestionRuche\GestionRuche\obj\Debug\GestionRuche.DAL.csproj.CoreCompileInputs.cache
+C:\Users\François\source\repos\RucheConnecte\GestionRuche\GestionRuche\obj\Debug\GestionRuche.pdb
+C:\Users\François\source\repos\RucheConnecte\GestionRuche\GestionRuche\bin\Debug\GestionRuche.pdb
+C:\Users\François\source\repos\RucheConnecte\GestionRuche\GestionRuche\bin\Debug\GestionRuche.dll.config
+C:\Users\François\source\repos\RucheConnecte\GestionRuche\GestionRuche\bin\Debug\GestionRuche.dll
+C:\Users\François\source\repos\RucheConnecte\GestionRuche\GestionRuche\obj\Debug\GestionRuche.dll

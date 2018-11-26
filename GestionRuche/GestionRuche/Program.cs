@@ -1,16 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestionRuche
+namespace GestionRuche.DAL
 {
     class Program
     {
         static void Main(string[] args)
         {
 
+           
 
         }
     }
